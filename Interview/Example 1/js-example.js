@@ -1,4 +1,3 @@
-
 // How many characters in a string but not with a function?
 
 // declaring a counter and initializing it to 0
@@ -23,9 +22,7 @@ console.log("Result is " + counter);
 
 // How many characters in the string are vowels?
 let counter = 0;
-
 const string = "AABSDWAAV";
-
 const arrayChars = string.split('');
 // => return value
 arrayChars.forEach((current) =>
@@ -43,14 +40,16 @@ console.log('Result = ', counter);
 // How many characters in the string are vowels? Count upper and lowercase.
 
 let counter = 0;
-
 const string = "AABSDWAAVaEe";
-
 const arrayChars = string.split('');
 // => return value
 arrayChars.forEach((currentCharacter) =>
 	{
+		// declared new variable upperCharacter
+		// upperCharacter variable is composed of the currentCharacter and makes it uppercase
+		// parentheses is empty because you don't need to specify the parameter. You want to make everything that's a character uppercase.
 		var upperCharacter = currentCharacter.toUpperCase();
+		// stating a condition
 		if(upperCharacter === 'A' || upperCharacter === 'E' || upperCharacter === 'I' || upperCharacter === 'O' || upperCharacter === 'U' )
 			counter++
 	}

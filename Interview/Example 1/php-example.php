@@ -49,23 +49,3 @@ echo "Result is ". $counter;
 // $UpperValue = strtoupper($value);  here you are defining the variable $upperValue. The variable is the variable $value made uppercase by strtoupper.
 
 /////////////////////////////////////////////////////
-
-$counter = 0;
-// declaring the string
-$string = "AABSDWAAVa";
-// $arrayChars is defining an array of characters. str_split is going to split the string into characters. $string is the string that you
-// will be splitting.
-$arrayChars = str_split($string);
-// foreach is the loop that iterates over the element of the array and for each iteration it refers to the current element as value.
-// value can be whatever identifiers you want to use
-foreach($arrayChars as $value)
-	//	//++ increments the counter by 1 for each element in the array
-{
-	// this checks the value to ensure it is identical to either of the values specified
-	$UpperValue = strtoupper($string);
-	if($UpperValue === "A" || $UpperValue === "E" || $UpperValue === "I" || $UpperValue === "O" || $UpperValue === "U")
-		// counter will then increment by 1 if the value (character) is identical to the value (character) that we are looking for
-		$counter++;
-}
-//printing the result
-echo "Result is ". $counter;
